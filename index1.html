@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Fiverr's mission is to change how the world works together. Fiverr connects businesses with freelancers offering digital services in 300+ categories.">
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+    <title>Fiverr - Freelance Services Marketplace for Businesses</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .header-main{
+            background-image: url(../img/hero.jpg);
+            min-height: 500px;
+            background-size: cover;     
+            background-repeat: no-repeat;
+
+        }
+
+        .logo{
+            height: auto;
+            width: 150px;
+            filter: invert(100%);
+            
+        }
+        .caption{
+            min-height: 20rem   ;
+        }
+
+        .category{
+            padding-bottom: 60px;
+            overflow: hidden;
+            height: calc(auto+32px);
+        }
+        .category h3:before{
+            content: "";
+            display: block;
+            margin: 5px auto 20px auto;
+            height: 1px;
+            width: 60px;
+            background-color: #00b30c;
+            transition: all .3s ease;
+        }
+
+        .category:hover h3:before{
+            width: 180px;
+        }
+
+        .category p{
+            opacity: 0;
+            padding-top: 60px;
+            transition: all .3s ease;
+        }
+        .category:hover p{
+            opacity: 1;
+            display: block; 
+            padding-top: 10px;
+            color:rgb(126, 89, 89);
+        }
+        .pro{
+            background-color: #353537;
+        }
+        .title h3{
+            font-weight: 500;
+            
+        }
+        .bg1{
+            background-image: url(img/service_1.png);
+            min-height: 350px;
+            min-width: auto;
+            background-position: no-repeat;
+            background-size: cover;
+        }
+        .bg2{
+            background-image: url(img/service_2.png);
+            min-height: 350px;
+            min-width: auto;
+            background-position: no-repeat;
+            background-size: cover;
+        }
+        .bg3{
+            background-image: url(img/service_3.png);
+            min-height: 350px;
+            min-width: auto;
+            background-position: no-repeat;
+            background-size: cover;
+        }
+        .bg4{
+            background-image: url(img/service_4.png);
+            min-height: 350px;
+            min-width: auto;
+            background-position: no-repeat;
+            background-size: cover;
+        }
+        .bg5{
+            background-image: url(img/service_5.png);
+            min-height: 350px;
+            min-width: auto;
+            background-position: no-repeat;
+            background-size: cover;
+        }
+        .left{
+            margin-left: 7%;
+        }
+        .yours{
+            background-color: #353537;
+        }
+        
+        .display .heading{
+            font-size: 30px;
+            font-weight: 330;
+            margin-top: 30%;
+        }
+        .display .d1{
+            margin-bottom: 30%;
+
+        }
+        .mycarousel{
+            background-color: rgba(128, 128, 128, 0.24);
+        }
+        .mycarousel .quote{
+            font-size: 30px;
+            font-weight: 350;
+        }
+        .foot-ul{
+            list-style: none;
+        }
+
+        .foot-ul li a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+       
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header class="header-main pt-4">
+        <div class="container">
+            <div class="row justify-content-around ">
+                <div class="col-sm-12 col-md-4 text-center text-md-auto">
+                    <img src="../img/fiverr_logo.png" alt="fiverr_logo" class="logo">
+                </div>
+                <div class="col-md-8 col-sm-12 text-center text-md-auto">
+                    <nav class="nav d-flex justify-content-end  flex-column flex-md-row">
+                        <a href="#" class="nav-link text-white">Become a best seller</a>
+                        <a href="#" class="nav-link text-white">Sign in</a>
+                        <a href="#" class="btn btn-outline-light">Join</a>
+                    </nav>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-around align-items-center caption">
+                        <div class="text-white">
+                            <h1 class="display-4 font-weight-bold">Don't Just Dream, Do</h1>
+                            <p class="text-center">Freelance services. On demand.</p>
+                            <form class="search mt-5">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="What services are you looking for?" required>
+                                    <div class="input-group-append">
+                                        <input type="submit" value="search" class="btn btn-lg btn-success px-3 py-2">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="explore">
+        <h2 class="text-capitalize display-4 font-weight-bold text-center mt-4">explore the market place</h2>
+        <p class="text-center">Get inspired to build your business</p>
+        <div class="row">
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_dg.png">
+                    <h3>Graphic &amp; Design</h3>
+                    <p>Logo Design, Business Cards, <br> Illustration &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_mkt.png">
+                    <h3>Digital Marketing</h3>
+                    <p>Social Media, SEO,<br>Content Marketing &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_et.png">
+                    <h3>Writing &amp; Translation</h3>
+                    <p>Resumes, Proofreading, <br>Translations &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_vd.png">
+                    <h3>Video &amp; Animation</h3>
+                    <p>Whiteboard, Animated Logos,<br>Brand Videos &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_av.png">
+                    <h3>Music &amp; Audio</h3>
+                    <p>Voice Over, Mixing, Producers,<br> Composers &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_dev.png">
+                    <h3>Programming &amp; Tech</h3>
+                    <p>Wordpress, Chatbots,<br>Programming &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_bis.png">
+                    <h3>Business</h3>
+                    <p>Virtual Assistant, Market Research,<br>Business Plans &amp; lots more</p>
+            </div>
+            <div class="col-6 col-md-3 text-center category">
+                    <img src="img/icon_ev.png">
+                    <h3>Fun &amp; Lifestyle</h3>
+                    <p>Online Lessons, Crafts,<br>Relationship Advice &amp; lots more</p>
+            </div>
+        </div>
+
+
+    <!-- <a href="#" class="nav-link">Graphic &amp; Design</a> -->
+    <!-- <a href="#" class="nav-link">Digital Marketing</a> -->
+    <!-- <a href="#" class="nav-link">Writing &amp; Translation</a> -->
+    <!-- <a href="#" class="nav-link">Video &amp; Animation</a> -->
+    <!-- <a href="#" class="nav-link">Music &amp; Audio</a> -->
+    <!-- <a href="#" class="nav-link">Programming &amp; Tech</a> -->
+    <!-- <a href="#" class="nav-link">Business</a> -->
+    <!-- <a href="#" class="nav-link">Fun &amp; Lifestyle</a> -->
+    </section>
+
+    <section class="pro">
+        <div class="container">
+            <div class="row title">
+                <div class="col-md-6 col-sm-12 py-5">
+                    <h3 class="display-4 text-white">Top Quality, Hand-Picked Professionals</h3>
+                <p class="text-white">Fvr Pro. Trusted by leading brands.</p> 
+                <input type="button" value="Explore PRO" class="btn btn-outline-light">
+                </div>
+                <div class="col-md-6 col-sm-12 pt-5 pl-5">
+                    <a href="#" data-toggle="modal" data-target="#video_modal"><img src="img/fvr_pro.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- vedio modal -->
+    <div class="modal fade" id="video_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video src="video/video.mp4" class="embed-responsive-item" controls autoplay></video>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="frststep mb-5">  
+        <div class="title">
+            <h3 class="display-4 text-center mt-5">Take The First Step</h3>
+            <p class="text-center">Whatever your goal, here are a few places to get started</p>
+            <div class="row left">
+                <div class="col-sm-12 col-md-6 col-lg-2 bg1 pt-3 mr-lg-4">
+                    <p class="mb-0 text-white">Build Your Brand</p>
+                    <p class="font-weight-bold text-white display-5">Logo Design</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 pt-3 bg2 mr-lg-4">
+                    <p class="mb-0 text-white">Customize Your Site</p>
+                    <p class="font-weight-bold text-white display-5">WordPress</p>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 pt-3 mr-lg-4 bg3">
+                    <p class="mb-0 text-white">Share Your Message</p>
+                    <p class="font-weight-bold text-white display-5">Voice Over</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 bg4 pt-3 mr-lg-4">
+                    <p class="mb-0 text-white">Engage Your Audience</p>
+                    <p class="font-weight-bold text-white display-5">Whiteboard</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 bg5 pt-3 mr-lg-4">
+                    <p class="mb-0 text-white">Reach More Customers</p>
+                    <p class="font-weight-bold text-white display-5">Social Medias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="yours">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-md-4 col-sm-12 display">
+                    <p class="heading text-center">Your <b>Terms</b></p>
+                    <p class="text-center d1">Whatever you need to simplify your to do list, no matter your budget.</p>
+                </div>
+                <div class="col-md-4 col-sm-12 display">
+                    <p class="heading text-center">Your <b>Timeline</b></p>
+                    <p class="text-center d1">Find services based on your goals and deadlines, it’s that simple.</p>
+                </div>
+                <div class="col-md-4 col-sm-12 display">
+                    <p class="heading text-center">Your <b>Safety</b></p>
+                    <p class="text-center d1">Your payment is always secure, Fiverr is built to protect your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mycarousel pd-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carousel-indicator-sabi" class="carousel slide" data-ride="carousel">
+                        <!-- indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-indicator-sabi" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-indicator-sabi" data-slide-to="1"></li>
+                            <li data-target="#carousel-indicator-sabi" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Content -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row no-gutters">
+                                    <div class="col-6 bg-light">
+                                        <h5 class="font-weight-bold mt-5 pl-5">Awesome service</h5>
+                                        <p class="lead text-dark font-italic mt-4 pl-5 quote">"A Profesional Service, amazing quality and very fast"</p>
+                                        <p class="mt-4 pl-5">Andrea De Marco, CEO of DeMarco Fashion</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="image-fluid" src="/img/slide1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row no-gutters">
+                                    <div class="col-6 bg-light">
+                                        <h5 class="font-weight-bold mt-5 pl-5">Awesome service</h5>
+                                        <p class="lead text-dark font-italic mt-4 pl-5 quote">"A Profesional Service, amazing quality and very fast"</p>
+                                        <p class="mt-4 pl-5">Andrea De Marco, CEO of DeMarco Fashion</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="image-fluid" src="/img/slide1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row no-gutters">
+                                    <div class="col-6 bg-light">
+                                        <h5 class="font-weight-bold mt-5 pl-5">Awesome service</h5>
+                                        <p class="lead text-dark font-italic mt-4 pl-5 quote">"A Profesional Service, amazing quality and very fast"</p>
+                                        <p class="mt-4 pl-5">Andrea De Marco, CEO of DeMarco Fashion</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="image-fluid" src="/img/slide1.jpg">
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                       <!-- control -->
+                        <a href="#carousel-indicator-sabi" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                            <span class="sr-only">previous</span>
+                        </a>
+
+                        <a href="#carousel-indicator-sabi" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide mb-5">
+        <div class="container">
+            <h3 class="font-weight-bold text-center mt-5 display-4">Fiverr Guides</h3>
+            <p class="text-center">How to use Fiverr to build and grow your business.</p>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="img/blog1.jpg" alt="blog1" class="image-fluid">
+                        <div class="card-body">
+                            <h5 class="font-weight-bold display-">Create your own website</h5>
+                            <p class="lead">Learn how to create & launch a successful website</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/blog2.jpg" alt="blog2" class="image-fluid">
+                        <div class="card-body">
+                            <h5 class="font-weight-bold display-">Create an App for your business</h5>
+                            <p class="lead">Create your own app without paying thousands</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/blog3.jpg" alt="blog3" class="image-fluid">
+                        <div class="card-body">
+                            <h5 class="font-weight-bold display-">Launch a Successful Blog</h5>
+                            <p class="lead">From A to Z, your complete guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <footer class="footer bg-light pt-5">
+        <div class="row">
+            <div class="col-md-2 col-sm-6">
+                <h5 class="text-muted text-center">Categories</h5>
+                <ul class="foot-ul">
+                    <li class="mb-3 mt-4"><a href="#" class="text-muted">Graphic & Design</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Digital Marketing</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Writing & Translation</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Video & Animation</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Music & Audio</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Programming & Tech</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Business</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Fun & Lifestyle</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <h5 class="text-muted ml-5">About</h5>
+                <ul class="foot-ul">
+                    <li class="mb-3 mt-4"><a href="#" class="text-muted">careers</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Press & News</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Patnership</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Privacy policy</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Terms of services</a></li>  
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <h5 class="text-muted ml-5">Support</h5>
+                <ul class="foot-ul">
+                    <li class="mb-3 mt-4"><a href="#" class="text-muted">Contact Support</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Help & Education</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Trust & Safety</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Selling on fvr</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Buying on fvr</a></li>  
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <h5 class="text-muted ml-4">Community</h5>
+                <ul class="foot-ul">
+                    <li class="mb-3 mt-4"><a href="#" class="text-muted">Events</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Blogs</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Forum</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Podcast</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">Invita a un amigo</a></li>  
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <h5 class="text-muted ml-4">For Freelancers</h5>
+                <ul class="foot-ul">
+                    <li class="mb-3 mt-4"><a href="#" class="text-muted">Become a seller</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">fvr PRO</a></li>
+                    <li class="mb-3"><a href="#" class="text-muted">AND OOOH!</a></li>  
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+    
+        <!-- Fontawesome CSS -->
+        <script src="https://kit.fontawesome.com/66362f2c63.js" crossorigin="anonymous"></script>
+
+        <!-- Bootdtstrap js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+
+        <script>
+            $('.carousel').carousel({
+            interval: 10000
+            });
+        </script>
+    </body>
+</html>
